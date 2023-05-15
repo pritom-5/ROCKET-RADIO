@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400&family=Open+Sans:wght@700&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +8,9 @@
 
 body {
 	position: relative;
+	font-family: "Open Sans", sans-serif;
 }
+
 .bg_color {
 	position: fixed;
 	top: 0;
@@ -20,7 +24,7 @@ body {
 	background-color: transparent;
 }
 .gif {
-	background-image: url("../songs_test/giphy.gif");
+	background-image: url("../public/giphy.gif");
 	min-height: 100vh;
 	min-width: 100vw;
 	position: fixed;
@@ -199,6 +203,7 @@ dialog:modal {
 	max-width: 70%;
 	margin-inline: auto;
 	margin-top: 4rem;
+	overflow-y: hidden;
 }
 .about_dialog_container {
 	display: flex;
@@ -220,6 +225,7 @@ dialog:modal {
 	font-size: 32px;
 	display: inline;
 	position: relative;
+	padding-block: 0.5rem;
 }
 .dialog_btn_tooltip {
 	display: none;

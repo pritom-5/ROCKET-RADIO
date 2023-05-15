@@ -89,7 +89,7 @@ function incrementDurationPlayed() {
 
 		incrementDurationSlider();
 		convertDurationPlayedFormat();
-	}, 20);
+	}, 1000);
 	/// chnage to 1000
 }
 
