@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>ROCKET-RADIO</title>
+		<meta
+			name="description"
+			content="🚀ROCKET-RADIO is the most reliable 👊, fun 🎉, easy to use 😎 and SAFEST ✅ radio-web-app. This site contains zero bloat or spyware making your listening experience GREAT and SAFE.⭐⭐⭐⭐."
+		/>
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+		/>
+
+		<link rel="stylesheet" href="../css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/86f9b5aba4.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="gif" class="gif"></div>
+		<div id="bg_color" class="bg_color"></div>
+		<audio src="" id="audio">audio running...</audio>
+
+		<div id="toggle_gif_btn_container" class="toggle_gif_btn_container">
+			<div class="gif_btn_tooltip tooltip">
+				Toggle to turn background on / off
+			</div>
+			<button id="toggle_gif_btn" class="toggle_gif_btn">
+				<i class="fa-solid fa-eye" id="toggle_icon"></i>
+			</button>
+		</div>
+
+		<div id="audio_player_bg" class="audio_player_bg">
+			<div id="audio_player_container" class="audio_player_container">
+				<div id="artwork_container" class="artwork_container">
+					<img src="" alt="" id="artwork" class="artwork" />
+				</div>
+				<div id="time" class="time_display">
+					<h1 id="duration_played_diaplay">00:00</h1>
+				</div>
+				<div id="duration_slider_container">
+					<input
+						id="duration_slider"
+						type="range"
+						name="duration_slider"
+						min="0"
+						max="100"
+						step="1"
+						disabled="true"
+						value="0"
+					/>
+				</div>
+				<div id="play_pause_container">
+					<button id="play_pause" class="play_pause_btn">
+						<i class="fa-solid fa-play"></i>
+					</button>
+				</div>
+				<div id="sound_slider" class="sound_slider">
+					<button id="volume_btn" class="volume_btn">
+						<i class="fa-solid fa-volume-high" id="volume_icon"></i>
+					</button>
+					<input
+						id="audio_slider"
+						type="range"
+						name="audio_slider"
+						min="0"
+						max="1"
+						step=".1"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<div class="dialog_btn_container">
+			<div class="dialog_btn_tooltip tooltip">
+				click to show special message
+			</div>
+			<button id="about_dialog_open_btn" class="about_dialog_open_btn">
+				😃
+			</button>
+		</div>
+
+		<dialog id="about_dialog" class="">
+			<div id="about_dialog_container" class="about_dialog_container">
+				<p>My Fellow Humans of Planet Earth,</p>
+				<p>
+					Today among thousands of music players and playlists I miss
+					the charm of radio. Unpredictablity of next song.
+				</p>
+				<p>
+					Pause and play and playlist taken that charm away from us
+					song lovers. Listening to random songs and when that
+					favorite songs come it is a joy like nothing.
+				</p>
+				<p>
+					This is my small attempt to bring that charm back through
+					this web app. Now press the button below to exit!
+				</p>
+				<button
+					id="about_dialog_close_btn"
+					class="about_dialog_close_btn"
+				>
+					🙃
+				</button>
+			</div>
+		</dialog>
+	</body>
+
+	<script type="module" src="../js/util.js" defer></script>
+	<script type="module" src="../js/index.js" defer></script>
+	<script type="module" src="../js/selector.js" defer></script>
+	<script type="module" src="../js/volume.js" defer></script>
+	<script type="module" src="../js/randomColor.js" defer></script>
+	<script type="module" src="../js/gifControl.js" defer></script>
+</html>
